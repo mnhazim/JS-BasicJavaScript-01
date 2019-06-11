@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		.titlecss{
+			padding: 15px;
+			font-size: 35px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 mx-auto">
+			<hr>
+			<p class="text-center titlecss">JavaScript Tutorial Part One</p>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 p-3">
+			<div class="card">
+				<div class="card-header">
+					<h2>Demo 1 {Change image}</h2>
+				</div>
+				<div class="card-body">
+					<img id="imgtest" src="img2.jpg" width="20%" height="auto">
+					<p id="papar"></p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-success" onclick="imgchange('front');">Front</button>
+					<button class="btn btn-success" onclick="imgchange('back');">Back</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 p-3">
+			<div class="card bg-warning">
+				<div class="card-header">
+					<h3>Demo 2 {change font style with toggle button}</h3>
+				</div>
+				<div class="card-body">
+					<p id="demo2">Hello, My Name is Muhamad Noor Hazim</p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-danger" onclick="demo2();">Change</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 p-3">
+			<div class="card bg-primary">
+				<div class="card-header">
+					<h3>Demo 3 {change text using toggle button}</h3>
+				</div>
+				<div class="card-body">
+					<p id="demo3">Hello</p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-primary" onclick="demo3();">Change</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 p-3">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 4 {hide unhide text using toggle button}</h3>
+				</div>
+				<div class="card-body">
+					<p id="demo4">Hide Unhide text</p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-warning" onclick="demo4();">Hide/Unhide</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 p-3">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 5 {Display String text using javascript}</h3>
+				</div>
+				<div class="card-body">
+					<p id="demo5"></p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-primary" onclick="demo5();">Click Me</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 mx-auto">
+			<hr>
+			<p class="text-center titlecss">JavaScript Tutorial Part Two</p>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 p-3">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 6 {Sum using JavaScript}</h3>
+				</div>
+				<div class="card-body">
+					<h4>5 + 6 = <span id="demo6"></span></h4>
+					<br>
+					<script>
+						document.write("This Text im using document.write() so 5 + 6 = " , 5 + 6);
+					</script>
+					
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-success" onclick="demo6();">=</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 p-3">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 7 {Sum using JavaScript Output using Alert}</h3>
+				</div>
+				<div class="card-body">
+					<h4>5 + 6 = <span id="demo7"></span></h4>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-success" onclick="demo7();">=</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 p-3">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 8 {Output at console}</h3>
+				</div>
+				<div class="card-body">
+					<h4>5 + 6 = </h4>
+					<p>Please inspect to view the console log</p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-success" onclick="demo8();">Console Log</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 p-3">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 9 {Statements}</h3>
+				</div>
+				<div class="card-body">
+					<h4>Example : <br>
+					x = 5 <br>
+					y = 6 <br>
+					z = x + y <br>
+					z = <span id="demo9">?</span></h4>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-primary" onclick="demo9();">Total</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 mx-auto">
+			<hr>
+			<p class="text-center titlecss">JavaScript Tutorial Part Three</p>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 10 {Function with parameters}</h3>
+				</div>
+				<div class="card-body">
+					<p>9 + 10 = <span id="demo10">?</span></p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-success" onclick="demo10();">Total</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h3>Demo 11 {return value using Function with parameters}</h3>
+				</div>
+				<div class="card-body">
+					<p>9 + 10 = <span id="demo11">?</span></p>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-success" onclick="demo11()">Total</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<p id="testshow"></p>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
